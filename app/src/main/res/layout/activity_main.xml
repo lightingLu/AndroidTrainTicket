@@ -111,7 +111,7 @@
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/login_pass_tv"
             android:background="@null"
-            android:hint="@string/login_name_hint" />
+            android:hint="@string/login_pass_hint" />
     </RelativeLayout>
 
     <View
@@ -152,9 +152,11 @@
 
         <ImageView
             android:id="@+id/login_passcode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/text" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:background="@mipmap/test" />
     </RelativeLayout>
 
     <Button
@@ -165,6 +167,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"/>
     <RelativeLayout
         android:layout_width="wrap_content"
