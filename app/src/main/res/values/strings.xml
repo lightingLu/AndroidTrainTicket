@@ -3,4 +3,5 @@
     <string name="login_name_hint">请输入用户名</string>
     <string name="login_pass_hint">请输入密码</string>
     <string name="login_account">帐号</string>
+    <string name="login_pass">密码</string>
 </resources>

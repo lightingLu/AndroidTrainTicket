@@ -90,18 +90,17 @@
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:src="@mipmap/icon_account" />
+            android:src="@mipmap/icon_passwd" />
 
         <TextView
             android:id="@+id/login_pass_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/login_pasword_img"
-            android:text="@string/login_account" />
+            android:text="@string/login_pass" />
 
         <EditText
             android:id="@+id/login_password"
@@ -109,6 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:password="true"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
