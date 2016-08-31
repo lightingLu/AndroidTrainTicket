@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QueryActivity"></activity>
+        <activity android:name=".QueryActivity" />
+        <activity android:name=".QueryCityActivity"></activity>
     </application>
 
 </manifest>

@@ -9,6 +9,9 @@
     <color name="login_textcolor">#F3F3F3</color>
     <color name="login_infocolor">#74BBE8</color>
     <color name="login_bac">#339EE2</color>
+    <color name="qr_bac">#F3F3F3</color>
+    <color name="tv_color">#000</color>
+    <color name="hint_color">#DCDCDC</color>
 
 
 </resources>

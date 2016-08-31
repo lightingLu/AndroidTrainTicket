@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <DatePicker
+        android:id="@+id/myDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:startYear="2016"
+        android:endYear="2017"
+        android:calendarViewShown="true"
+        android:spinnersShown="true" />
+</LinearLayout>

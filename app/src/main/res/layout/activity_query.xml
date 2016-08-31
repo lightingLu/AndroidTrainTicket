@@ -1,12 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="androidtrainticket.yinda.com.androidtrainticket.QueryActivity">
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/login_bac">
+
+        <ImageView
+            android:id="@+id/qurey_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/tabpage_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/qurey_img"
+            android:text="火车票"
+            android:textColor="@color/login_textcolor"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@color/qr_bac">
+
+        <RelativeLayout
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/query_from_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="出发地" />
+
+            <Button
+                android:id="@+id/query_from"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/query_from_text"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp"
+                android:drawableRight="@mipmap/arrow_right_gray"
+                android:text="北京" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/from">
+
+            <TextView
+                android:id="@+id/query_to_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="目的地" />
+
+            <Button
+                android:id="@+id/query_to"
+                android:layout_width="180dp"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/query_to_text"
+                android:drawableRight="@mipmap/arrow_right_gray"
+                android:text="深圳" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/query_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/jiantou" />
+
+        <RelativeLayout
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/to">
+
+            <TextView
+                android:id="@+id/query_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="出发日期" />
+
+            <Button
+                android:id="@+id/query_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp"
+                android:layout_toRightOf="@+id/query_date_text"
+                android:drawableRight="@mipmap/arrow_right_gray"
+                android:text="2016年9月10日" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/query_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/login_btn"
+            android:drawableLeft="@mipmap/search_icon_gray"
+            android:text="查询"
+            android:textColor="@color/login_textcolor" />
+    </RelativeLayout>
+
+
+</LinearLayout>
