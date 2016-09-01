@@ -117,7 +117,7 @@
                 android:textSize="22dp"
                 android:layout_toRightOf="@+id/query_date_text"
                 android:drawableRight="@mipmap/arrow_right_gray"
-                android:text="2016年9月10日" />
+                android:text="2016-09-10" />
         </RelativeLayout>
 
         <Button

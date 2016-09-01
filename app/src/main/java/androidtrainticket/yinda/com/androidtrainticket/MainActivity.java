@@ -1,6 +1,8 @@
 package androidtrainticket.yinda.com.androidtrainticket;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -37,6 +39,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import utils.AssetsDatabaseManager;
 import utils.HTTPSUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
