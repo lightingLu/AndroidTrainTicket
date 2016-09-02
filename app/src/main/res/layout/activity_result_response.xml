@@ -52,6 +52,7 @@
                 android:background="@color/login_bac"
                 android:layout_height="50dp">
                 <TextView
+                    android:id="@+id/time_sort"
                     android:text="时间早晚"
                     android:padding="10dp"
                     android:textColor="@color/hint_color"
@@ -60,6 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
+                    android:id="@+id/usetime_sort"
                     android:padding="10dp"
                     android:textColor="@color/hint_color"
                     android:text="历时排序"
@@ -68,6 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
+                    android:id="@+id/price_sort"
                     android:padding="10dp"
                     android:textColor="@color/hint_color"
                     android:layout_weight="1"
@@ -76,6 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
+                    android:id="@+id/chose"
                     android:padding="10dp"
                     android:text="筛选"
                     android:textSize="20dp"

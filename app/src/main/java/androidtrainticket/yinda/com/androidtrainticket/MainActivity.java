@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try {
                     Response response = clientYanz.newCall(requestYanz).execute();
                     if (response.isSuccessful()){
-                        System.out.println("___________"+response);
+
                     }
 
                 } catch (IOException e) {
