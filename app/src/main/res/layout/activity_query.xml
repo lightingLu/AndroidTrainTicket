@@ -33,7 +33,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@color/qr_bac">
 
@@ -55,10 +55,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@+id/query_from_text"
-                android:textColor="@color/tv_color"
-                android:textSize="22dp"
                 android:drawableRight="@mipmap/arrow_right_gray"
-                android:text="北京" />
+                android:text="长沙"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -77,13 +77,13 @@
             <Button
                 android:id="@+id/query_to"
                 android:layout_width="180dp"
-                android:textColor="@color/tv_color"
-                android:textSize="22dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@+id/query_to_text"
                 android:drawableRight="@mipmap/arrow_right_gray"
-                android:text="深圳" />
+                android:text="深圳"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp" />
         </RelativeLayout>
 
         <ImageView
@@ -91,9 +91,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/date"
-            android:layout_marginRight="25dp"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="30dp"
+            android:layout_marginRight="25dp"
             android:src="@mipmap/jiantou" />
 
         <RelativeLayout
@@ -113,11 +113,11 @@
                 android:id="@+id/query_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/tv_color"
-                android:textSize="22dp"
                 android:layout_toRightOf="@+id/query_date_text"
                 android:drawableRight="@mipmap/arrow_right_gray"
-                android:text="2016-09-10" />
+                android:text="2016-09-05"
+                android:textColor="@color/tv_color"
+                android:textSize="22dp" />
         </RelativeLayout>
 
         <Button
@@ -126,11 +126,87 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/date"
             android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
             android:layout_marginTop="10dp"
             android:background="@color/login_btn"
-            android:drawableLeft="@mipmap/search_icon_gray"
             android:text="查询"
             android:textColor="@color/login_textcolor" />
+
+        <RelativeLayout
+            android:id="@+id/rc_zuijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/query_qr"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:id="@+id/line_left"
+                android:layout_width="130dp"
+                android:layout_height="1dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/hint_color" />
+
+            <TextView
+                android:id="@+id/zuijinchaxuns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/line_left"
+                android:text="最近查询" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/zuijinchaxuns"
+                android:background="@color/hint_color" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/login_textcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:background="@color/login_bac"
+            android:src="@mipmap/grab_icon_text" />
+
+        <ImageView
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@color/login_bac"
+            android:src="@mipmap/hotel_order" />
+
+
     </RelativeLayout>
 
 
